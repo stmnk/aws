@@ -18,6 +18,9 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+    - name: Format the code
+      run: |
+        make format
     - name: Lint my code
       run: |
         make lint

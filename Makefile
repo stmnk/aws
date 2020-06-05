@@ -11,8 +11,8 @@ lint:
 	
 
 test:
-	python -m pytest -vv --cov=lib --cov=cli tests/*.py
+	python -m pytest -vv --cov=libs --cov=cli tests/*.py
 	python -m pytest --nbval-lax notebook.ipynb
 
 
-all: install lint test
+all: install format lint test
